@@ -3,8 +3,8 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - test',
-    title: 'test',
+    titleTemplate: '%s - Log In or Sign Up',
+    title: 'Facebook',
     htmlAttrs: {
       lang: 'en',
     },
@@ -15,6 +15,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -63,4 +64,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+  server: {
+    host: '0.0.0.0',
+  }
 }
